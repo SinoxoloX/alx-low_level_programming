@@ -5,8 +5,8 @@
 /* betty style doc for function main goes there */
 /**
  * main - print the last digit of the number stored in the variable
- * followed by new line
- * Return
+ * followed by newline
+ * Return: always 0
  */
 int main(void)
 {
@@ -17,12 +17,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	x = n % 10;
-	if (x > 5)
+	if (x > n)
 		printf("last digit of %d is %d and is greater than 5", n, x);
 	else if (x == n)
 		printf("last digit of %d is %d and is 0", n, x);
 	else if (x < 6 && x != 0)
 		printf("last digit of %d is %d and is less than 6 and not 0", n, x);
-printf("\n");
+	printf("\n");
+
 	return (0);
 }
